@@ -56,6 +56,17 @@
     font-family: 'Architects Daughter', cursive;
 
 }
+.card-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-footer a{
+    text-decoration: none;
+    color: black;
+}
+.card-footer h5{
+font-size: 1.2em;
+}
 .menuimg{
     width: 100%;
     height: 300px;
