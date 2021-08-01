@@ -48,3 +48,11 @@
     text-decoration: underline 1px;
     font-family: 'Cinzel', serif;
 }
+
+.menu{
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: 1px 1px 5px gray;
+    font-family: 'Architects Daughter', cursive;
+
+}
