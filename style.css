@@ -74,3 +74,6 @@
     font-family: 'Architects Daughter', cursive;
 
 }
+.orderform *{
+    padding: 10px;
+}
