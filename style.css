@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cinzel:wght@800&family=Great+Vibes&display=swap');
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+}
+.topnav-bar{
+    flex-grow: 0;
+    width: fit-content;
+    padding: 10px;
+}
+.nav-link{
+    font-size: 1.3em;
+    padding-left: 10px;
+    font-family: 'Architects Daughter', cursive;
+}
 .banner{
     width: 100%;
     height: 700px;
@@ -21,11 +35,16 @@
     color: white;
     padding: 50px;
     position: absolute;
-    left: 35%;
-    right: 30%;
-    top: 25%;
-    width: 610px;
-    height: 150px;
+    left: 0%;
+    right: 0%;
+    top: 30%;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
+}
+.bannercnt h1{
+    text-decoration: underline 1px;
+    font-family: 'Cinzel', serif;
 }
