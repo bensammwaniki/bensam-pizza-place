@@ -12,18 +12,20 @@ $(document).ready(function(){
 //   bussiness logic
 var size_price , crust_price, topping_price ;
 let total = 0;
-function pizza(size,topping,crust){
+function pizza(size,topping,crust,total){
     this.pizzaSize = size;
     this.pizzaTopping = topping;
     this.pizzaCrust = crust;
+    this.totalprice = total;
 }
 
 
 $(document).ready(function(){
     let pTopping = $("#topping option:selected").val();
-    let pSize = $("#size option:selected").val();
+    let pSize = $("#size").find(":selected").val();
     let pCrust = $("#crust option:selected").val();
 $("#checkout").click(function(event){
+    console.log(pSize)
         switch (pSize) {
   
         case "large":
@@ -72,6 +74,7 @@ $("#checkout").click(function(event){
         default:
           console.log("No price"); 
       }
-
+   total = topping_price + crust_price + size_price;
+   console.log(total)
 })
 })
