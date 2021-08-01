@@ -6,22 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bens pizza</title>
     <link rel="stylesheet" href="style.css">
-    ,<link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 </head>
 <body>
-    <div>
+    <div class="container-fluid">
         <!-- navbar  -->
-        <nav>
-            <h1>bensam<br>pizza</h1>
-            <ul>
-                <a href="">Home</a>
-                <a href="">About us</a>
-                <a href="">Order Now</a>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><h1>bensam<br>pizza</h1></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="">About us</a>
+                  <a class="nav-link" href="">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </nav>
         <!-- banner image -->
         <div>
-            <img src="" alt="">
+            <img src="assets/pexels-andy-kuzm.jpg" alt="pizza image">
+            <div>
+                <h1>Welcome to Bensam's pizza</h1>
+                <h3>All your favourlite pizza in one place</h3>
+                <button type="button" class="btn btn-outline-warning" >Order Now</button>
+            </div>
         </div>
 
 
