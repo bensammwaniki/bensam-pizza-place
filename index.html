@@ -83,27 +83,48 @@
         <!-- end of menu section  -->
         <!-- order now form  -->
         <div class="container order">
+          <h1>Order Your Favourlite Now </h1>
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 menuimg">
-              <img src="assets/menu/pexels-engin-akyurt.jpg" alt="pizza">
+              <img src="assets/menu/pexels-ikeen-james.jpg" alt="pizza">
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-6">
               <form class="border rounded-3 bg-light">
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                  <label for="floatingPassword">Password</label>
-                </div>
-                <div class="checkbox mb-3">
-                  <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                  </label>
-                </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                <div class="size">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Small">
+                        <label class="form-check-label" for="inlineRadio1">Small</label>
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Medium</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Large</label>
+                      </div>
+                 </div>
+                 <div class="select">
+                  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>select your favourlite crust</option>
+                    <option value="crispy">Crispy</option>
+                    <option value="stuffed">Stuffed</option>
+                    <option value="gluten">Gluten free</option>
+                  </select>
+                 </div>
+
+                 <div class="select">
+                  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>select your favourlite topping</option>
+                    <option value="roni">Pepperoni</option>
+                    <option value="onions">Onions</option>
+                    <option value="mashroom">Mashroom</option>
+                    <option value="cheese">Extra Cheese</option>
+                  </select>
+                 </div>
+                <button class="w-100 btn btn-lg btn-warning" type="submit">Order Now</button>
               </form>
             </div>
           </div>
