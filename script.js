@@ -8,3 +8,17 @@ $(document).ready(function(){
       }
     });
   });
+
+//   bussiness logic
+function pizza(size,topping,crust){
+    this.pizzaSize = size;
+    this.pizzaTopping = topping;
+    this.pizzaCrust = crust;
+}
+ 
+let myPizza = new pizza()
+
+
+$(document).ready(function(){
+
+})
