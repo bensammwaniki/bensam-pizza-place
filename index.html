@@ -99,23 +99,15 @@
             <div class="col-sm-12 col-md-6 col-lg-6">
               <form class="border rounded-3 bg-light orderform">
                 <div class="size">
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Small">
-                        <label class="form-check-label" for="inlineRadio1">Small</label>
-                      </div>
-
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="medium">
-                        <label class="form-check-label" for="inlineRadio1">Medium</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Large">
-                        <label class="form-check-label" for="inlineRadio1">Large</label>
-                      </div>
+                  <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="size">
+                    <option selected>Small</option>
+                    <option value="crispy">Large</option>
+                    <option value="stuffed">Medium</option>
+                  </select>
                  </div>
 
                  <div class="selectcrust">
-                  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                  <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="crust">
                     <option selected>select your favourlite crust</option>
                     <option value="crispy">Crispy</option>
                     <option value="stuffed">Stuffed</option>
@@ -124,7 +116,7 @@
                  </div>
 
                  <div class="selecttop">
-                  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                  <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="topping">
                     <option selected>select your favourlite topping</option>
                     <option value="roni">Pepperoni</option>
                     <option value="onions">Onions</option>
@@ -133,7 +125,7 @@
                   </select>
                  </div>
                  <div><button class="w-100 btn btn-lg btn-warning" type="submit">Order Now</button> </div> 
-                 <div><button class="w-100 btn btn-lg btn-outline-warning" type="submit">Check out</button></div> 
+                 <div><button class="w-100 btn btn-lg btn-outline-warning" type="button" id="checkout">Check out</button></div> 
               </form>
             </div>
           </div>
