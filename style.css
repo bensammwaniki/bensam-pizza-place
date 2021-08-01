@@ -77,3 +77,23 @@
 .orderform *{
     padding: 10px;
 }
+.abt{
+    height: 300px;
+    margin-top: 50px;
+    background-image: url("assets/pexels-alena-shekhovtcova.jpg");
+    position: relative;
+}
+.about{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.479);
+    align-items: baseline;
+}
