@@ -175,14 +175,13 @@ $("button.checkout").click(function(event){
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
   
-        $("#message").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliveryamount);
+        $("#message").append("Thank you "+person+", We have recieved your order and will be delivered to you at "+location+ ".Please Prepare sh. "+deliveryamount+" or pay via m-pesa");
         $("#totalbill").hide();
         $("#message").slideDown(1200);
       }
       else {
         alert("Please fill in the details for delivery!");
         $(".delivery").show();
-        $("button#final-order").show();
       }
     });
 
