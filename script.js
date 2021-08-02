@@ -19,7 +19,7 @@ function pizza(size,topping,crust,total){
     this.totalprice = total;
 }
 
-
+// get data from form for selected pizza type 
 $(document).ready(function(){
 $("button.checkout").click(function(event){
   let pSize = $(".size option:selected").val();
@@ -86,7 +86,7 @@ $("button.checkout").click(function(event){
   $("#pizzatopping").html($(".topping option:selected").val());
   $("#totals").html(total);
   
-// adding a new pizza 
+// add a new pizza 
   $("button.addPizza").click(function(event){
     let pSize = $(".size option:selected").val();
     let pCrust = $(".crust option:selected").val();
@@ -140,14 +140,19 @@ $("button.checkout").click(function(event){
       }
       total = topping_price + crust_price + size_price;
       overAllTotal = overAllTotal + total
+      // constaractor function for new pizza 
       var newOrder = new pizza(pSize, pCrust,pTopping,total);
       console.log(newOrder)
+
+      // add a neww pizza to the display table
       $("#orders").append('<tr>'+'</td><td id="pizzasize">' + newOrder.pizzaSize + '</td><td id="pizzacrust">'+newOrder.pizzaCrust + '</td><td id="pizzatopping">'+newOrder.pizzaTopping+'</td><td id="totals">'+newOrder.totalprice+'</td></tr>');
 
     })
+    // show the bill in full including pizzas 
     $("button#checkout").click(function(){ 
       $("#pizzatotal").append("Your bill is sh. "+overAllTotal);
     });
+    // showthe derivery form 
     $("button.omeDelivery").click(function(){
       $(".pizzatable").hide();
       $(".delivery").slideDown(1000);
@@ -160,7 +165,7 @@ $("button.checkout").click(function(event){
       $("#totalm").append("Your bill including delivery fee is: "+delivery);
     });
   
-
+// get data from derivery form 
     $("button.orderNow").click(function(event){
       event.preventDefault();
       let deliveryamount= overAllTotal+300;
