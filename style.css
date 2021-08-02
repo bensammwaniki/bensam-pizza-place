@@ -60,7 +60,7 @@
 font-size: 1.2em;
 }
 .menuimg{
-    height: 335px;
+    height: fit-content;
     background-image: url("assets/menu/pexels-ikeen-james.jpg");
     background-size: cover;
     position: relative;
@@ -118,4 +118,14 @@ font-size: 1.2em;
     width: 100%;
     background-color: black;
     opacity: 0.5;
+}
+#details{
+    display: none;
+    text-align: left;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.767);
+    margin: 10px;
+}
+#details div{
+    padding: 10px;
 }

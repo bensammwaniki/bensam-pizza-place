@@ -57,7 +57,7 @@ $("button.checkout").click(function(event){
         case "roni":
          topping_price = 100;
         break;
-        case "onion":
+        case "onions":
           topping_price = 200;
         break;
         case "mashroom":
@@ -126,7 +126,7 @@ $("button.checkout").click(function(event){
         case "roni":
          topping_price = 100;
         break;
-        case "onion":
+        case "onions":
           topping_price = 200;
         break;
         case "mashroom":
@@ -141,30 +141,38 @@ $("button.checkout").click(function(event){
       total = topping_price + crust_price + size_price;
       overAllTotal = overAllTotal + total
       var newOrder = new pizza(pSize, pCrust,pTopping,total);
-      $("#ordersmade").append('</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
+      console.log(newOrder)
+      $("#orders").append('<tr>'+'</td><td id="pizzasize">' + newOrder.pizzaSize + '</td><td id="pizzacrust">'+newOrder.pizzaCrust + '</td><td id="pizzatopping">'+newOrder.pizzaTopping+'</td><td id="totals">'+newOrder.totalprice+'</td></tr>');
 
     })
     $("button#checkout").click(function(){ 
       $("#pizzatotal").append("Your bill is sh. "+overAllTotal);
     });
-    $("button.delivery").click(function(){
-      let delivery= overAllTotal+300;
+    $("button.omeDelivery").click(function(){
+      $(".pizzatable").hide();
+      $(".delivery").slideDown(1000);
+      $("#addedprice").hide();
+      $("button.omeDelivery").hide();
+      $("#totalm").hide();
+      $("#details").show();
+      let delivery = overAllTotal+300;
+      console.log(delivery)
       $("#totalm").append("Your bill including delivery fee is: "+delivery);
     });
   
 
-    $("button#orderNow").click(function(event){
+    $("button.orderNow").click(function(event){
       event.preventDefault();
-      let deliceryamount= checkoutTotal+150;
+      let deliveryamount= overAllTotal+300;
       let person = $("input#name").val();
       let phone = $("input#phone").val();
       let location = $("input#location").val();
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
   
-        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliceryamount);
+        $("#message").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliveryamount);
         $("#totalbill").hide();
-        $("#finallmessage").slideDown(1200);
+        $("#message").slideDown(1200);
       }
       else {
         alert("Please fill in the details for delivery!");
