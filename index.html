@@ -92,23 +92,54 @@
         <div class="container order">
           <h1>Order Your Favourlite Now </h1>
           <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6 menuimg">
-              <img src="assets/menu/pexels-ikeen-james.jpg" alt="pizza">
+            <div class="col-sm-12 col-md-12 col-lg-6 menuimg">
+              <div class="delivery">
+                <h2>Your Order is:</h2>
+                <div id="completeOrder">
+                  <table class="table table-sm  pizzatable">
+                    <thead>
+                      <tr>
+                        <th scope="col">Size</th>
+                        <th scope="col">Crust</th>
+                        <th scope="col">Topping</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody id="orders">
+                      <tr>
+                        <td id="pizzasize"></td>
+                        <td id="pizzacrust"></td>
+                        <td id="pizzatopping"></td>
+                        <td id="totals"></td>
+                      </tr>                  
+                    </tbody>
+                  </table>
+                  <p id="pizzatotal"></p>
+                  <p id="totalm"></p> 
+                  <p id="addedprice">Delivery will cost 300</p>
+                  <p id="finallmessage"></p>
+                </div>
+                <button class="btn btn-warning addPizza">Add Pizza</button>
+                <button class="btn btn-warning" id="checkout">Checkout</button>
+                <button class="btn btn-warning deliver">Home delivery?</button>
+              </div>
+
             </div>
+
 
             <div class="col-sm-12 col-md-6 col-lg-6">
               <form class="border rounded-3 bg-light orderform">
                 <div class="size">
-                  <select class="form-select form-select-sm" id="size">
-                    <option >Small</option>
-                    <option value="crispy">Large</option>
-                    <option value="stuffed">Medium</option>
+                  <select class="form-select form-select-sm size" id="size">
+                    <option value="small">Small</option>
+                    <option value="large">Large</option>
+                    <option value="medium">Medium</option>
                   </select>
                  </div>
 
                  <div class="selectcrust">
-                  <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="crust">
-                    <option>select your favourlite crust</option>
+                  <select class="form-select form-select-sm crust" aria-label=".form-select-sm example" id="crust">
+                    <option value="0">select your favourlite crust</option>
                     <option value="crispy">Crispy</option>
                     <option value="stuffed">Stuffed</option>
                     <option value="gluten">Gluten free</option>
@@ -116,16 +147,16 @@
                  </div>
 
                  <div class="selecttop">
-                  <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="topping">
-                    <option>select your favourlite topping</option>
+                  <select class="form-select form-select-sm topping" aria-label=".form-select-sm example" id="topping">
+                    <option value="0">select your favourlite topping</option>
                     <option value="roni">Pepperoni</option>
                     <option value="onions">Onions</option>
                     <option value="mashroom">Mashroom</option>
                     <option value="cheese">Extra Cheese</option>
                   </select>
                  </div>
-                 <div><button class="w-100 btn btn-lg btn-warning" type="submit">Order Now</button> </div> 
-                 <div><button class="w-100 btn btn-lg btn-outline-warning" type="button" id="checkout">Check out</button></div> 
+                 <div><button class="w-100 btn btn-lg btn-warning orderNow" type="submit">Order Now</button> </div> 
+                 <div><button class="w-100 btn btn-lg btn-outline-warning checkout" type="button" id="checkout">Check out</button></div> 
               </form>
             </div>
           </div>
