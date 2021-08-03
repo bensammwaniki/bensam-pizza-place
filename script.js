@@ -9,6 +9,16 @@ $(document).ready(function(){
     });
   });
 
+
+  $('.checkout').click(function(e){
+    $('.checkout').hide()
+});
+$('.omeDelivery').click(function(e){
+  $('.orderNow').show()
+  $('.addPizza').hide()
+  $('#checkout').hide()
+
+});
 //   bussiness logic
 var size_price , crust_price, topping_price ;
 let total = 0;
