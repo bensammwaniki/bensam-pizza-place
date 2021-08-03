@@ -12,6 +12,8 @@ $(document).ready(function(){
 
   $('.checkout').click(function(e){
     $('.checkout').hide()
+    $('.omeDelivery').show()
+
 });
 $('.omeDelivery').click(function(e){
   $('.orderNow').show()
